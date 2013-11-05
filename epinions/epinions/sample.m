@@ -1,0 +1,148 @@
+data = load('rating.mat');
+nrows = size(data.rating,1);
+ncols = size(data.rating,2);
+A = [max(data.rating(:,1)) max(data.rating(:,2)) max(data.rating(:,3)) max(data.rating(:,4))];
+%display('Maximum value for each column ');
+%disp(A);
+
+
+cat1 = -1;
+cat2 = -1;
+cat3 = -1;
+cat4 = -1;
+cat5 = -1;
+cat6 = -1;
+cat7 = -1;
+cat8 = -1;
+cat9 = -1;
+cat10 = -1;
+cat11 = -1;
+cat12 = -1;
+cat13 = -1;
+cat14 = -1;
+cat15 = -1;
+cat16 = -1;
+cat17 = -1;
+cat18 = -1;
+cat19 = -1;
+cat20 = -1;
+cat21 = -1;
+cat22 = -1;
+cat23 = -1;
+cat24 = -1;
+cat25 = -1;
+cat26 = -1;
+cat27 = -1;
+for i = 1:nrows
+    if (data.rating(i,3) == 1)
+        cat1 = [cat1 data.rating(i,2)];
+        continue;
+    end
+    if (data.rating(i,3) == 2)
+        cat2 = [cat2 data.rating(i,2)];
+        continue;
+    end
+    if (data.rating(i,3) == 3)
+        cat3 = [cat3 data.rating(i,2)];
+        continue;
+    end
+    if (data.rating(i,3) == 4)
+        cat4 = [cat4 data.rating(i,2)];
+        continue;
+    end
+    if (data.rating(i,3) == 5)
+        cat5 = [cat5 data.rating(i,2)];
+        continue;
+    end
+    if (data.rating(i,3) == 6)
+        cat6 = [cat6 data.rating(i,2)];
+        continue;
+    end
+    if (data.rating(i,3) == 7)
+        cat7 = [cat7 data.rating(i,2)];
+        continue;
+    end
+    if (data.rating(i,3) == 8)
+        cat8 = [cat8 data.rating(i,2)];
+        continue;
+    end
+    if (data.rating(i,3) == 9)
+        cat9 = [cat9 data.rating(i,2)];
+        continue;
+    end
+    if (data.rating(i,3) == 10)
+        cat10 = [cat10 data.rating(i,2)];
+        continue;
+    end
+    if (data.rating(i,3) == 11)
+        cat11 = [cat11 data.rating(i,2)];
+        continue;
+    end
+    if (data.rating(i,3) == 12)
+        cat12 = [cat12 data.rating(i,2)];
+        continue;
+    end
+    if (data.rating(i,3) == 13)
+        cat13 = [cat13 data.rating(i,2)];
+        continue;
+    end
+    if (data.rating(i,3) == 14)
+        cat14 = [cat14 data.rating(i,2)];
+        continue;
+    end
+    if (data.rating(i,3) == 15)
+        cat15 = [cat15 data.rating(i,2)];
+        continue;
+    end
+    if (data.rating(i,3) == 16)
+        cat16 = [cat16 data.rating(i,2)];
+        continue;
+    end
+    if (data.rating(i,3) == 17)
+        cat17 = [cat17 data.rating(i,2)];
+        continue;
+    end
+    if (data.rating(i,3) == 18)
+        cat18 = [cat18 data.rating(i,2)];
+        continue;
+    end
+    if (data.rating(i,3) == 19)
+        cat19 = [cat19 data.rating(i,2)];
+        continue;
+    end
+    if (data.rating(i,3) == 20)
+        cat20 = [cat20 data.rating(i,2)];
+        continue;
+    end
+    if (data.rating(i,3) == 21)
+        cat21 = [cat21 data.rating(i,2)];
+        continue;
+    end
+    if (data.rating(i,3) == 22)
+        cat22 = [cat22 data.rating(i,2)];
+        continue;
+    end
+    if (data.rating(i,3) == 23)
+        cat23 = [cat23 data.rating(i,2)];
+        continue;
+    end
+    if (data.rating(i,3) == 24)
+        cat24 = [cat24 data.rating(i,2)];
+        continue;
+    end
+    if (data.rating(i,3) == 25)
+        cat25 = [cat25 data.rating(i,2)];
+        continue;
+    end
+    if (data.rating(i,3) == 26)
+        cat26 = [cat26 data.rating(i,2)];
+        continue;
+    end
+    if (data.rating(i,3) == 27)
+        cat27 = [cat27 data.rating(i,2)];
+        continue;
+    end
+end
+
+C1 = intersect(cat1, cat2);
+disp(C1);

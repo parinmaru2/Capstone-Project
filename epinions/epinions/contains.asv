@@ -1,0 +1,19 @@
+function [ answer ] = contains(ratings, user, cat)
+% checks whether the user has provided rating for the products in the gives
+% category.
+% @param     ratings     the ratings dataset
+% @param     user        userID
+% @param     category    category of the products
+    
+%     ratings_rows = size(ratings.rating,1);
+    rows = nrows(ratings);
+    answer = false;
+    for n = 1:rows
+        if (ratings(n) == user)
+            answer = true;
+            break;
+        end
+    end
+
+end
+
